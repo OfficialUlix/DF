@@ -23,7 +23,6 @@
 
     revealElements.forEach((el) => observer.observe(el));
   } else {
-    // Fallback: show everything immediately
     revealElements.forEach((el) => el.classList.add("is-visible"));
   }
 
@@ -44,7 +43,7 @@
         const y = (e.clientY - rect.top) / rect.height - 0.5;
 
         orbs.forEach((orb, i) => {
-          const depth = (i + 1) * 6;
+          const depth = (i + 1) * 8;
           orb.style.transform = `translate3d(${x * depth}px, ${y * depth}px, 0)`;
         });
 
@@ -53,25 +52,39 @@
     });
   }
 
-  /* ── Glitch burst on title (occasional random micro-glitch) */
-  const titleBase = document.querySelector(".hero__title-layer--base");
-  if (titleBase) {
+  /* ── Micro-glitch on title — irregular, organic ────────── */
+  const titlePrimary = document.querySelector(".hero__primary");
+  if (titlePrimary) {
     function triggerMicroGlitch() {
-      const dx = (Math.random() - 0.5) * 4;
-      titleBase.style.transform = `skewX(-1.6deg) translate3d(${dx}px, 0, 0)`;
-      titleBase.style.opacity = (0.85 + Math.random() * 0.15).toString();
+      const dx = (Math.random() - 0.5) * 3;
+      const dy = (Math.random() - 0.5) * 1.5;
+      titlePrimary.style.transform = `translate3d(${dx}px, ${dy}px, 0)`;
+      titlePrimary.style.opacity = (0.82 + Math.random() * 0.18).toString();
 
       setTimeout(() => {
-        titleBase.style.transform = "";
-        titleBase.style.opacity = "";
-      }, 60 + Math.random() * 80);
+        titlePrimary.style.transform = "";
+        titlePrimary.style.opacity = "";
+      }, 50 + Math.random() * 70);
 
-      // Next glitch in 3–8 seconds
-      setTimeout(triggerMicroGlitch, 3000 + Math.random() * 5000);
+      setTimeout(triggerMicroGlitch, 4000 + Math.random() * 6000);
     }
 
-    // Start after initial load
-    setTimeout(triggerMicroGlitch, 2000);
+    setTimeout(triggerMicroGlitch, 2500);
+  }
+
+  /* ── Scar intensity pulse on mouse proximity ───────────── */
+  const scars = document.querySelectorAll(".hero__scar");
+  if (scars.length && hero && window.matchMedia("(pointer: fine)").matches) {
+    hero.addEventListener("mousemove", (e) => {
+      const rect = hero.getBoundingClientRect();
+      const y = (e.clientY - rect.top) / rect.height;
+      // Brighten scars when mouse is near center of title
+      const proximity = 1 - Math.abs(y - 0.45) * 2.5;
+      const intensity = Math.max(0.3, Math.min(1, proximity));
+      scars.forEach((scar) => {
+        scar.style.opacity = intensity.toString();
+      });
+    });
   }
 
   /* ── Hide scroll hint on scroll ────────────────────────── */

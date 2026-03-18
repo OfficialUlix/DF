@@ -24,69 +24,77 @@
 
       <!-- ═══════════════════════════════════════════ HERO ═══════════════════════════════════════════ -->
       <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero__vignette" aria-hidden="true"></div>
+        <div class="hero__interference" aria-hidden="true"></div>
         <span class="hero__orb hero__orb--cold" aria-hidden="true"></span>
         <span class="hero__orb hero__orb--warm" aria-hidden="true"></span>
-        <span class="hero__orb hero__orb--ember" aria-hidden="true"></span>
 
-        <div class="hero__content">
-          <div class="hero__meta">
-            <p class="meta-tag">EP / 6 tracks / signal decay</p>
-            <p class="meta-date">?? / ?? / 2026</p>
-          </div>
+        <!-- Corner meta — detached from title block -->
+        <div class="hero__corner" aria-hidden="true">
+          <span class="hero__corner-tag">EP / 6 TRACKS</span>
+          <span class="hero__corner-date">?? / ?? / 2026</span>
+        </div>
 
+        <!-- Title block — the wordmark -->
+        <div class="hero__title-block">
           <h1 class="hero__title" id="hero-title">
-            <span class="hero__title-layer hero__title-layer--base">
-              <span>DEAD</span>
-              <span>FREQUENCIES</span>
+            <!-- Ghost echoes — offset, faint, damaged -->
+            <span class="hero__ghost hero__ghost--far" aria-hidden="true">
+              <span class="hero__word">DEAD</span>
+              <span class="hero__word">FREQUENCIES</span>
             </span>
-            <span class="hero__title-layer hero__title-layer--cold" aria-hidden="true">
-              <span>DEAD</span>
-              <span>FREQUENCIES</span>
+            <span class="hero__ghost hero__ghost--near" aria-hidden="true">
+              <span class="hero__word">DEAD</span>
+              <span class="hero__word">FREQUENCIES</span>
             </span>
-            <span class="hero__title-layer hero__title-layer--warm" aria-hidden="true">
-              <span>DEAD</span>
-              <span>FREQUENCIES</span>
+
+            <!-- Corruption slice — horizontal band clipped -->
+            <span class="hero__corrupt" aria-hidden="true">
+              <span class="hero__word">DEAD</span>
+              <span class="hero__word">FREQUENCIES</span>
             </span>
-            <span class="hero__title-layer hero__title-layer--slice-top" aria-hidden="true">
-              <span>DEAD</span>
-              <span>FREQUENCIES</span>
+
+            <!-- Primary layer -->
+            <span class="hero__primary">
+              <span class="hero__word hero__word--dead">DEAD</span>
+              <span class="hero__word hero__word--freq">FREQUENCIES</span>
             </span>
-            <span class="hero__title-layer hero__title-layer--slice-bottom" aria-hidden="true">
-              <span>DEAD</span>
-              <span>FREQUENCIES</span>
-            </span>
+
+            <!-- Interference line through the type -->
+            <span class="hero__scar" aria-hidden="true"></span>
+            <span class="hero__scar hero__scar--low" aria-hidden="true"></span>
           </h1>
+        </div>
 
-          <p class="hero__lead">
-            A world — and a mind — slowly breaking down like a failing signal.
+        <!-- Transmission fragment — the copy -->
+        <div class="hero__transmission">
+          <div class="hero__tx-line" aria-hidden="true"></div>
+          <p class="hero__tx-prefix" aria-hidden="true">// signal intercept — partial decode</p>
+          <p class="hero__tx-body">
+            A world and a mind breaking down<br />
+            like a failing signal.
           </p>
-          <p class="hero__sub">
-            Systems collapse, connection is lost, everything falls into silence.
-            But something human refuses to disappear.
+          <p class="hero__tx-body hero__tx-body--dim">
+            Systems collapse. Connection lost.<br />
+            Something human refuses to disappear.
           </p>
+        </div>
 
-          <div class="hero__actions">
-            <a
-              class="btn btn--primary"
-              href="https://soundcloud.com/officialulix/sets/dead-frequencies-ep/s-2C5xUiZAUcY?si=5020ca7b6da746ec98c100a862eee543&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span class="btn__text">Enter Transmission</span>
-              <span class="btn__glitch" aria-hidden="true">Enter Transmission</span>
-            </a>
-            <a class="btn btn--ghost" href="#tracklist">
-              View Tracklist
-            </a>
-          </div>
-
-          <div class="hero__signal" aria-hidden="true">
-            <div class="hero__signal-bar"></div>
-            <div class="hero__signal-bar"></div>
-            <div class="hero__signal-bar"></div>
-            <div class="hero__signal-bar"></div>
-            <div class="hero__signal-bar"></div>
-          </div>
+        <!-- Actions — transmission controls -->
+        <div class="hero__controls">
+          <a
+            class="hero__ctrl hero__ctrl--enter"
+            href="https://soundcloud.com/officialulix/sets/dead-frequencies-ep/s-2C5xUiZAUcY?si=5020ca7b6da746ec98c100a862eee543&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="hero__ctrl-indicator" aria-hidden="true"></span>
+            <span class="hero__ctrl-label">Enter Transmission</span>
+          </a>
+          <a class="hero__ctrl hero__ctrl--list" href="#tracklist">
+            <span class="hero__ctrl-indicator" aria-hidden="true"></span>
+            <span class="hero__ctrl-label">View Tracklist</span>
+          </a>
         </div>
 
         <div class="hero__scroll-hint" aria-hidden="true">
