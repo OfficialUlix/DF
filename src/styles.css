@@ -348,7 +348,8 @@ body::before {
 .hero__title-block {
   position: relative;
   z-index: 3;
-  margin-bottom: clamp(3rem, 6vw, 5rem);
+  margin-top: clamp(2rem, 5vw, 4rem);
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
 }
 
 .hero__title {
@@ -577,6 +578,7 @@ body::before {
   gap: 0.5rem;
   justify-content: center;
   margin-top: clamp(2.4rem, 4vw, 3.6rem);
+  margin-bottom: clamp(3rem, 5vw, 4rem);
 }
 
 .hero__ctrl {
@@ -665,10 +667,7 @@ body::before {
 
 /* ── Scroll hint ────────────────────────────────────── */
 .hero__scroll-hint {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   z-index: 3;
   display: flex;
   flex-direction: column;
@@ -1150,6 +1149,80 @@ body::before {
 }
 
 /* ═══════════════════════════════════════════════════════════
+   ATMOSPHERIC PARTICLES — subtle floating dust/embers
+   ═══════════════════════════════════════════════════════════ */
+.hero__particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.hero__particle {
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.hero__particle:nth-child(1) {
+  top: 18%; left: 12%;
+  background: rgba(131, 215, 255, 0.4);
+  animation: particle-float-1 18s ease-in-out infinite;
+}
+
+.hero__particle:nth-child(2) {
+  top: 72%; left: 78%;
+  width: 1.5px; height: 1.5px;
+  background: rgba(255, 111, 78, 0.35);
+  animation: particle-float-2 22s ease-in-out infinite 3s;
+}
+
+.hero__particle:nth-child(3) {
+  top: 35%; left: 65%;
+  width: 1px; height: 1px;
+  background: rgba(244, 238, 230, 0.3);
+  animation: particle-float-3 16s ease-in-out infinite 1.5s;
+}
+
+.hero__particle:nth-child(4) {
+  top: 58%; left: 22%;
+  background: rgba(131, 215, 255, 0.3);
+  animation: particle-float-1 20s ease-in-out infinite 6s;
+}
+
+.hero__particle:nth-child(5) {
+  top: 85%; left: 45%;
+  width: 1.5px; height: 1.5px;
+  background: rgba(255, 198, 125, 0.3);
+  animation: particle-float-2 24s ease-in-out infinite 9s;
+}
+
+.hero__particle:nth-child(6) {
+  top: 12%; left: 88%;
+  width: 1px; height: 1px;
+  background: rgba(244, 238, 230, 0.25);
+  animation: particle-float-3 19s ease-in-out infinite 4s;
+}
+
+.hero__particle:nth-child(7) {
+  top: 45%; left: 8%;
+  width: 1.5px; height: 1.5px;
+  background: rgba(255, 111, 78, 0.25);
+  animation: particle-float-2 21s ease-in-out infinite 7s;
+}
+
+.hero__particle:nth-child(8) {
+  top: 92%; left: 32%;
+  background: rgba(131, 215, 255, 0.2);
+  animation: particle-float-1 17s ease-in-out infinite 11s;
+}
+
+/* ═══════════════════════════════════════════════════════════
    SCROLL REVEAL
    ═══════════════════════════════════════════════════════════ */
 .reveal {
@@ -1407,4 +1480,26 @@ body::before {
 @keyframes line-drift {
   0%, 100% { transform: translateX(-2%); opacity: 0.2; }
   50% { transform: translateX(2%); opacity: 0.4; }
+}
+
+/* ── Particle keyframes ──────────────────────────────── */
+@keyframes particle-float-1 {
+  0%, 100% { transform: translate3d(0, 0, 0); opacity: 0; }
+  10% { opacity: 0.6; }
+  50% { transform: translate3d(30px, -60px, 0); opacity: 0.4; }
+  90% { opacity: 0.5; }
+}
+
+@keyframes particle-float-2 {
+  0%, 100% { transform: translate3d(0, 0, 0); opacity: 0; }
+  15% { opacity: 0.5; }
+  50% { transform: translate3d(-40px, -45px, 0); opacity: 0.35; }
+  85% { opacity: 0.45; }
+}
+
+@keyframes particle-float-3 {
+  0%, 100% { transform: translate3d(0, 0, 0); opacity: 0; }
+  12% { opacity: 0.4; }
+  50% { transform: translate3d(20px, -70px, 0); opacity: 0.3; }
+  88% { opacity: 0.35; }
 }
