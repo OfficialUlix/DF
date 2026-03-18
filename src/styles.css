@@ -476,6 +476,18 @@ body::before {
   animation: scar-flicker 11s linear infinite reverse;
 }
 
+/* ── Descriptor — clarity line under title ───────────── */
+.hero__descriptor {
+  margin: 1.4rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-align: center;
+}
+
 /* ── Transmission copy — narrow, fragmented feel ────── */
 .hero__transmission {
   position: relative;
@@ -602,6 +614,17 @@ body::before {
   position: relative;
 }
 
+.hero__ctrl-hint {
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  opacity: 0.6;
+  margin-left: 0.2rem;
+}
+
 /* ── Scroll hint ────────────────────────────────────── */
 .hero__scroll-hint {
   position: absolute;
@@ -667,6 +690,16 @@ body::before {
 
 .arc__header {
   max-width: 38rem;
+}
+
+.arc__descriptor {
+  margin: 0.6rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
 }
 
 .arc__intro {
@@ -944,6 +977,13 @@ body::before {
 
 .tracklist__header {
   margin-bottom: clamp(2.4rem, 4vw, 3.6rem);
+}
+
+.tracklist__descriptor {
+  margin: 0.6rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-dim);
 }
 
 .tracklist__grid {
