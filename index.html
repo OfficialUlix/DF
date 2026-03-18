@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dead Frequencies</title>
+    <meta
+      name="description"
+      content="Dead Frequencies — a world and a mind breaking down like a failing signal. Six transmissions from static to silence."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="scan-line" aria-hidden="true"></div>
+
+    <main class="site-shell">
+
+      <!-- ═══════════════════════════════════════════ HERO ═══════════════════════════════════════════ -->
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <span class="hero__orb hero__orb--cold" aria-hidden="true"></span>
+        <span class="hero__orb hero__orb--warm" aria-hidden="true"></span>
+        <span class="hero__orb hero__orb--ember" aria-hidden="true"></span>
+
+        <div class="hero__content">
+          <div class="hero__meta">
+            <p class="meta-tag">EP / 6 tracks / signal decay</p>
+            <p class="meta-date">?? / ?? / 2026</p>
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__title-layer hero__title-layer--base">
+              <span>DEAD</span>
+              <span>FREQUENCIES</span>
+            </span>
+            <span class="hero__title-layer hero__title-layer--cold" aria-hidden="true">
+              <span>DEAD</span>
+              <span>FREQUENCIES</span>
+            </span>
+            <span class="hero__title-layer hero__title-layer--warm" aria-hidden="true">
+              <span>DEAD</span>
+              <span>FREQUENCIES</span>
+            </span>
+            <span class="hero__title-layer hero__title-layer--slice-top" aria-hidden="true">
+              <span>DEAD</span>
+              <span>FREQUENCIES</span>
+            </span>
+            <span class="hero__title-layer hero__title-layer--slice-bottom" aria-hidden="true">
+              <span>DEAD</span>
+              <span>FREQUENCIES</span>
+            </span>
+          </h1>
+
+          <p class="hero__lead">
+            A world — and a mind — slowly breaking down like a failing signal.
+          </p>
+          <p class="hero__sub">
+            Systems collapse, connection is lost, everything falls into silence.
+            But something human refuses to disappear.
+          </p>
+
+          <div class="hero__actions">
+            <a
+              class="btn btn--primary"
+              href="https://soundcloud.com/officialulix/sets/dead-frequencies-ep/s-2C5xUiZAUcY?si=5020ca7b6da746ec98c100a862eee543&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="btn__text">Enter Transmission</span>
+              <span class="btn__glitch" aria-hidden="true">Enter Transmission</span>
+            </a>
+            <a class="btn btn--ghost" href="#tracklist">
+              View Tracklist
+            </a>
+          </div>
+
+          <div class="hero__signal" aria-hidden="true">
+            <div class="hero__signal-bar"></div>
+            <div class="hero__signal-bar"></div>
+            <div class="hero__signal-bar"></div>
+            <div class="hero__signal-bar"></div>
+            <div class="hero__signal-bar"></div>
+          </div>
+        </div>
+
+        <div class="hero__scroll-hint" aria-hidden="true">
+          <span>Scroll to decode</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════ DIVIDER ═══════════════════════════════════════════ -->
+      <div class="divider" aria-hidden="true">
+        <div class="divider__line"></div>
+        <span class="divider__label">Signal Intercepted / Decoding Transmission</span>
+        <div class="divider__line"></div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════ STORY ARC ═══════════════════════════════════════════ -->
+      <section class="arc" id="arc" aria-labelledby="arc-title">
+        <div class="arc__header">
+          <p class="meta-tag">Transmission Log / Narrative Decode</p>
+          <h2 class="section-title" id="arc-title">Signal Collapse</h2>
+          <p class="arc__intro">
+            The EP follows a metaphorical collapse of both society and the self,
+            told through the language of signals, circuits, static, and decay.
+          </p>
+        </div>
+
+        <div class="arc__timeline">
+          <div class="arc__line" aria-hidden="true"></div>
+
+          <article class="arc__phase reveal" data-phase="1">
+            <div class="arc__indicator" aria-hidden="true">
+              <span class="arc__dot arc__dot--active"></span>
+              <span class="arc__status">SIGNAL DETECTED</span>
+            </div>
+            <div class="arc__card">
+              <span class="arc__number">01</span>
+              <h3 class="arc__phase-title">First Interference</h3>
+              <p class="arc__phase-body">
+                The first glitches appear. The world feels off — systems flicker,
+                structures show cracks, something beneath the surface is failing.
+              </p>
+              <span class="arc__signal-label">Signal Strength: ██████░░ 78%</span>
+            </div>
+          </article>
+
+          <article class="arc__phase reveal" data-phase="2">
+            <div class="arc__indicator" aria-hidden="true">
+              <span class="arc__dot arc__dot--warning"></span>
+              <span class="arc__status">SIGNAL DEGRADING</span>
+            </div>
+            <div class="arc__card">
+              <span class="arc__number">02</span>
+              <h3 class="arc__phase-title">Submersion</h3>
+              <p class="arc__phase-body">
+                The collapse becomes personal. The noise overwhelms the protagonist
+                emotionally, feeling like they're drowning in pressure and disconnection.
+              </p>
+              <span class="arc__signal-label">Signal Strength: █████░░░ 54%</span>
+            </div>
+          </article>
+
+          <article class="arc__phase reveal" data-phase="3">
+            <div class="arc__indicator" aria-hidden="true">
+              <span class="arc__dot arc__dot--warning"></span>
+              <span class="arc__status">IDENTITY FRAGMENTED</span>
+            </div>
+            <div class="arc__card">
+              <span class="arc__number">03</span>
+              <h3 class="arc__phase-title">Disconnection</h3>
+              <p class="arc__phase-body">
+                The protagonist disconnects from themselves. Still physically present —
+                but mentally absent. Identity fractures. They become a ghost inside
+                their own life.
+              </p>
+              <span class="arc__signal-label">Signal Strength: ███░░░░░ 32%</span>
+            </div>
+          </article>
+
+          <article class="arc__phase reveal" data-phase="4">
+            <div class="arc__indicator" aria-hidden="true">
+              <span class="arc__dot arc__dot--critical"></span>
+              <span class="arc__status">SIGNAL LOST</span>
+            </div>
+            <div class="arc__card">
+              <span class="arc__number">04</span>
+              <h3 class="arc__phase-title">Total Collapse</h3>
+              <p class="arc__phase-body">
+                Total breakdown. The city becomes a graveyard of dead lights and
+                lost signals — everything that once felt stable is gone.
+              </p>
+              <span class="arc__signal-label">Signal Strength: █░░░░░░░ 08%</span>
+            </div>
+          </article>
+
+          <article class="arc__phase reveal" data-phase="5">
+            <div class="arc__indicator" aria-hidden="true">
+              <span class="arc__dot arc__dot--ember"></span>
+              <span class="arc__status">SIGNAL OVERRIDE</span>
+            </div>
+            <div class="arc__card">
+              <span class="arc__number">05</span>
+              <h3 class="arc__phase-title">Defiance</h3>
+              <p class="arc__phase-body">
+                A moment of defiance. Instead of waiting for the system to fix itself,
+                the protagonist breaks free from it.
+              </p>
+              <span class="arc__signal-label">Signal Strength: ████░░░░ MANUAL</span>
+            </div>
+          </article>
+
+          <article class="arc__phase reveal" data-phase="6">
+            <div class="arc__indicator" aria-hidden="true">
+              <span class="arc__dot arc__dot--resolve"></span>
+              <span class="arc__status">SIGNAL PERSISTS</span>
+            </div>
+            <div class="arc__card">
+              <span class="arc__number">06</span>
+              <h3 class="arc__phase-title">What Remains</h3>
+              <p class="arc__phase-body">
+                After the collapse, silence settles. The world is scarred and broken,
+                but something survives in the ruins. The signal continues.
+              </p>
+              <span class="arc__signal-label">Signal Strength: ██░░░░░░ HUMAN</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════ QUOTE ═══════════════════════════════════════════ -->
+      <section class="quote-section" aria-label="Core message">
+        <div class="quote-section__inner">
+          <div class="quote-section__lines" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <blockquote class="quote reveal">
+            <p class="quote__text">
+              Even when everything fails —<br />
+              systems, connections, identity, stability —<br />
+              <em>the human signal doesn't disappear.</em>
+            </p>
+            <footer class="quote__footer">
+              <span class="quote__rule" aria-hidden="true"></span>
+              <p class="quote__coda">It survives the noise.</p>
+              <p class="quote__coda">It survives the silence.</p>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════ TRACKLIST ═══════════════════════════════════════════ -->
+      <section class="tracklist" id="tracklist" aria-labelledby="tracklist-title">
+        <div class="tracklist__header">
+          <p class="meta-tag">Full Transmission / 6 Tracks</p>
+          <h2 class="section-title" id="tracklist-title">Tracklist</h2>
+        </div>
+
+        <ol class="tracklist__grid">
+          <li class="track reveal" data-track="01">
+            <div class="track__index">
+              <span class="track__num">01</span>
+              <span class="track__wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </span>
+            </div>
+            <div class="track__info">
+              <h3 class="track__name">Static Signals</h3>
+              <p class="track__desc">
+                The first glitches appear. Systems flicker, structures crack,
+                and something under the surface starts to fail.
+              </p>
+            </div>
+            <span class="track__tag">INTERFERENCE</span>
+          </li>
+
+          <li class="track reveal" data-track="02">
+            <div class="track__index">
+              <span class="track__num">02</span>
+              <span class="track__wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </span>
+            </div>
+            <div class="track__info">
+              <h3 class="track__name">Drown Tonight</h3>
+              <p class="track__desc">
+                The collapse turns inward — pressure, noise, and disconnection
+                become impossible to breathe through.
+              </p>
+            </div>
+            <span class="track__tag">SUBMERSION</span>
+          </li>
+
+          <li class="track reveal" data-track="03">
+            <div class="track__index">
+              <span class="track__num">03</span>
+              <span class="track__wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </span>
+            </div>
+            <div class="track__info">
+              <h3 class="track__name">Ghost</h3>
+              <p class="track__desc">
+                Still physically present, but mentally absent. Identity fractures
+                until the self feels like a ghost inside its own life.
+              </p>
+            </div>
+            <span class="track__tag">FRACTURE</span>
+          </li>
+
+          <li class="track reveal" data-track="04">
+            <div class="track__index">
+              <span class="track__num">04</span>
+              <span class="track__wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </span>
+            </div>
+            <div class="track__info">
+              <h3 class="track__name">Neon Graves</h3>
+              <p class="track__desc">
+                Total breakdown. Dead lights and lost signals turn the city into
+                a graveyard of everything that once felt stable.
+              </p>
+            </div>
+            <span class="track__tag">COLLAPSE</span>
+          </li>
+
+          <li class="track reveal" data-track="05">
+            <div class="track__index">
+              <span class="track__num">05</span>
+              <span class="track__wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </span>
+            </div>
+            <div class="track__info">
+              <h3 class="track__name">Light The Fire</h3>
+              <p class="track__desc">
+                A moment of defiance. Instead of waiting for the system to recover,
+                the protagonist breaks away from it.
+              </p>
+            </div>
+            <span class="track__tag">DEFIANCE</span>
+          </li>
+
+          <li class="track reveal" data-track="06">
+            <div class="track__index">
+              <span class="track__num">06</span>
+              <span class="track__wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </span>
+            </div>
+            <div class="track__info">
+              <h3 class="track__name">We Remain</h3>
+              <p class="track__desc">
+                Silence settles after the collapse, but something human survives
+                in the ruins — and keeps transmitting.
+              </p>
+            </div>
+            <span class="track__tag">SURVIVAL</span>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ═══════════════════════════════════════════ FINAL CTA ═══════════════════════════════════════════ -->
+      <section class="cta" id="listen" aria-labelledby="cta-title">
+        <div class="cta__inner">
+          <div class="cta__noise" aria-hidden="true"></div>
+          <p class="meta-tag">Transmission Open</p>
+          <h2 class="cta__title" id="cta-title">
+            <span class="cta__title-line">The signal</span>
+            <span class="cta__title-line cta__title-line--accent">persists.</span>
+          </h2>
+          <p class="cta__body">
+            Six tracks. One collapse. Something human underneath it all.
+          </p>
+          <a
+            class="btn btn--primary btn--large"
+            href="https://soundcloud.com/officialulix/sets/dead-frequencies-ep/s-2C5xUiZAUcY?si=5020ca7b6da746ec98c100a862eee543&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="btn__text">Listen Now</span>
+            <span class="btn__glitch" aria-hidden="true">Listen Now</span>
+          </a>
+
+          <div class="cta__footer">
+            <span class="cta__label">DEAD FREQUENCIES</span>
+            <span class="cta__label cta__label--dim">?? / ?? / 2026</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
