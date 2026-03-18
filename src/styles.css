@@ -869,13 +869,46 @@ body::before {
 }
 
 .arc__signal-label {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
   margin-top: 0.9rem;
   font-family: var(--mono);
   font-size: 0.62rem;
   letter-spacing: 0.14em;
   color: var(--text-faint);
 }
+
+/* Signal bar fill for "We Remain" */
+.arc__signal-bars {
+  display: inline-flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.arc__signal-bar {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.85em;
+  background: rgba(125, 255, 179, 0.2);
+  border-radius: 1px;
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Staggered fill delay on reveal */
+.is-visible .arc__signal-label--fill .arc__signal-bar {
+  background: rgba(125, 255, 179, 0.7);
+  box-shadow: 0 0 4px rgba(125, 255, 179, 0.15);
+}
+
+.is-visible .arc__signal-label--fill .arc__signal-bar:nth-child(1) { transition-delay: 0.3s; }
+.is-visible .arc__signal-label--fill .arc__signal-bar:nth-child(2) { transition-delay: 0.4s; }
+.is-visible .arc__signal-label--fill .arc__signal-bar:nth-child(3) { transition-delay: 0.5s; }
+.is-visible .arc__signal-label--fill .arc__signal-bar:nth-child(4) { transition-delay: 0.6s; }
+.is-visible .arc__signal-label--fill .arc__signal-bar:nth-child(5) { transition-delay: 0.7s; }
+.is-visible .arc__signal-label--fill .arc__signal-bar:nth-child(6) { transition-delay: 0.8s; }
+.is-visible .arc__signal-label--fill .arc__signal-bar:nth-child(7) { transition-delay: 0.9s; }
+.is-visible .arc__signal-label--fill .arc__signal-bar:nth-child(8) { transition-delay: 1.0s; }
 
 /* Phase-specific border accents */
 [data-phase="1"] .arc__card { border-left-color: rgba(131, 215, 255, 0.3); }
