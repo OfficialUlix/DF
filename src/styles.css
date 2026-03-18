@@ -922,13 +922,20 @@ body::before {
 .is-visible .arc__signal-label--fill .arc__signal-bar:nth-child(7) { transition-delay: 0.9s; }
 .is-visible .arc__signal-label--fill .arc__signal-bar:nth-child(8) { transition-delay: 1.0s; }
 
-/* Phase-specific border accents */
+/* Phase-specific accents — border + signal label colour */
 [data-phase="1"] .arc__card { border-left-color: rgba(131, 215, 255, 0.3); }
 [data-phase="2"] .arc__card { border-left-color: rgba(255, 111, 78, 0.25); }
 [data-phase="3"] .arc__card { border-left-color: rgba(255, 111, 78, 0.2); }
 [data-phase="4"] .arc__card { border-left-color: rgba(255, 68, 68, 0.3); }
 [data-phase="5"] .arc__card { border-left-color: rgba(255, 198, 125, 0.3); }
 [data-phase="6"] .arc__card { border-left-color: rgba(125, 255, 179, 0.25); }
+
+[data-phase="1"] .arc__signal-label { color: rgba(131, 215, 255, 0.55); }
+[data-phase="2"] .arc__signal-label { color: rgba(255, 111, 78, 0.5); }
+[data-phase="3"] .arc__signal-label { color: rgba(255, 111, 78, 0.45); }
+[data-phase="4"] .arc__signal-label { color: rgba(255, 68, 68, 0.55); }
+[data-phase="5"] .arc__signal-label { color: rgba(255, 198, 125, 0.5); }
+[data-phase="6"] .arc__signal-label { color: rgba(125, 255, 179, 0.5); }
 
 /* ═══════════════════════════════════════════════════════════
    QUOTE SECTION
