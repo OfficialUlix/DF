@@ -377,8 +377,7 @@ body::before {
   font-size: clamp(4.5rem, 18vw, 13rem);
   line-height: 0.82;
   letter-spacing: 0.18em;
-  /* Offset right — broken baseline */
-  padding-left: 0.08em;
+  text-align: center;
   text-shadow:
     0 0 40px rgba(0, 0, 0, 0.8),
     0 0 80px rgba(0, 0, 0, 0.4);
@@ -1182,7 +1181,6 @@ body::before {
 @media (max-width: 480px) {
   .hero__word--dead {
     font-size: clamp(3rem, 20vw, 4.2rem);
-    padding-left: 0;
   }
 
   .hero__word--freq {
